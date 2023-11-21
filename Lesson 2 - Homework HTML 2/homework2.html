@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="bgRed">Make Backgroung Red</button>
+    <button id="bgGreen">Make Background Green</button>
+    <script>
+      function makeBackgroundRed() {
+        document.body.style.backgroundColor = "red";
+      }
+
+      function makeBackgroundGreen() {
+        document.body.style.backgroundColor = "green";
+      }
+      document
+        .getElementById("bgRed")
+        .addEventListener("click", makeBackgroundRed);
+      document
+        .getElementById("bgGreen")
+        .addEventListener("click", makeBackgroundGreen);
+    </script>
+  </body>
+</html>
